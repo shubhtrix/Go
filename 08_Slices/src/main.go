@@ -22,8 +22,8 @@ func main() {
 
 	fmt.Println("length: ",len(s))
 
-	s.append(s, "d")
-	s.append(s, "d", "e")
+	s = append(s, "d")
+	s = append(s, "d", "e")
 	fmt.Println("New s:", s)
 
 	//Slices can also be copy’d. Here we create an empty
@@ -49,10 +49,10 @@ func main() {
 
 	twoD := make([][]int,3)
 
-	for i = 0; i< 3; i++ {
+	for i := 0; i< 3; i++ {
 		innerLen := i + 1
 		twoD[i] = make([]int, innerLen)
-		for j =0; j < 3; j++ {
+		for j := 0; j < innerLen; j++ {
 			twoD[i][j] = i + j
 		}
 	}
