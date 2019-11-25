@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Close	./device_linux.go	/^func (d *device) Close() error                { return d.f.Close() }$/;"	f
+ErrBusy	./interface.go	/^	ErrBusy        = errors.New("device is already in use")$/;"	v
+ErrExhausted	./interface.go	/^	ErrExhausted   = errors.New("no devices are available")$/;"	v
+ErrNotReady	./interface.go	/^	ErrNotReady    = errors.New("device is not ready")$/;"	v
+ErrUnsupported	./interface.go	/^	ErrUnsupported = errors.New("device is unsupported on this platform")$/;"	v
+Interface	./interface.go	/^type Interface interface {$/;"	t
+Name	./device_linux.go	/^func (d *device) Name() string                { return d.n }$/;"	f
+Read	./device_linux.go	/^func (d *device) Read(p []byte) (int, error)  { return d.f.Read(p) }$/;"	f
+String	./device_linux.go	/^func (d *device) String() string              { return d.n }$/;"	f
+Tap	./interface.go	/^func Tap(name string) (Interface, error) {$/;"	f
+Tun	./interface.go	/^func Tun(name string) (Interface, error) {$/;"	f
+Write	./device_linux.go	/^func (d *device) Write(p []byte) (int, error) { return d.f.Write(p) }$/;"	f
+cIFF_NO_PI	./device_linux.go	/^	cIFF_NO_PI = 0x1000$/;"	c
+cIFF_TAP	./device_linux.go	/^	cIFF_TAP   = 0x0002$/;"	c
+cIFF_TUN	./device_linux.go	/^	cIFF_TUN   = 0x0001$/;"	c
+createTuntapInterface	./device_linux.go	/^func createTuntapInterface(fd uintptr, name string, flags uint16) (string, error) {$/;"	f
+device	./device_linux.go	/^type device struct {$/;"	t
+main	./device_linux.go	/^package main$/;"	p
+main	./dump.go	/^func main() {$/;"	f
+main	./dump.go	/^package main$/;"	p
+main	./interface.go	/^package main$/;"	p
+newTAP	./device_linux.go	/^func newTAP(name string) (Interface, error) {$/;"	f
+newTUN	./device_linux.go	/^func newTUN(name string) (Interface, error) {$/;"	f
+tuntapInterface	./device_linux.go	/^type tuntapInterface struct {$/;"	t
